@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+  margin: 0 15px;
+  overflow: hidden;
+  background: #414141;
+}
+
+* body #canvas {
+  -webkit-box-shadow: -3px 2px 9px 6px black;
+          box-shadow: -3px 2px 9px 6px black;
+  cursor: pointer;
+  background: #414141;
+}
+
+* body .tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 15px;
+}
+
+* body .tools .color {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+
+* body .tools .button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100px;
+  height: 40px;
+  border: 2px solid white;
+  cursor: pointer;
+  color: white;
+  background: black;
+  margin: 0 15px;
+}
+
+* body .tools .color-picker {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 15px;
+  height: 50px;
+}
+
+* body .tools .pen-range {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 15px;
+}
+/*# sourceMappingURL=main.css.map */

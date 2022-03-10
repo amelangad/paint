@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Paint</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+       <canvas id="canvas"></canvas>
+       <div class="tools">
+       <button onclick="clearCanvas()" type="button"  class ="button">Clear</button>
+       <div onclick="changeColor(this)" class="color" style ="background-color: red"></div>
+       <div onclick="changeColor(this)" class="color" style ="background-color: blue"></div>
+       <div onclick="changeColor(this)" class="color" style ="background-color: yellow"></div>
+       <input onInput="draw_color = this.value" type="color" class ="color-picker">
+       <input type="range" min="1" max ="100" class ="pen-range" onInput="draw_width = this.value">
+
+    </div>
+        <script src="app.js" async defer></script>
+    </body>
+</html>
