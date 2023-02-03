@@ -19,26 +19,25 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px;
+  padding: 100px;
   margin: 0 15px;
-  overflow: hidden;
-  background: #414141;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#7cb3ff), to(#f56cda));
+  background-image: linear-gradient(to top, #7cb3ff, #f56cda);
 }
 
 * body #canvas {
-  -webkit-box-shadow: -3px 2px 9px 6px black;
-          box-shadow: -3px 2px 9px 6px black;
+  -webkit-box-shadow: -5px 5px 50px 8px rgba(246, 244, 244, 0.663);
+          box-shadow: -5px 5px 50px 8px rgba(246, 244, 244, 0.663);
   cursor: pointer;
-  background: #414141;
 }
 
 * body .tools {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -51,7 +50,7 @@
   width: 40px;
   cursor: pointer;
   display: inline-block;
-  border-radius: 50%;
+  border-radius: 40%;
   margin: 0 15px;
 }
 
@@ -61,25 +60,30 @@
       align-self: center;
   width: 100px;
   height: 40px;
-  border: 2px solid white;
+  border-radius: 30px;
+  border-bottom: 5px solid transparent;
   cursor: pointer;
   color: white;
   background: black;
-  margin: 0 15px;
 }
 
 * body .tools .color-picker {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin: 0 15px;
-  height: 50px;
+  margin: 0 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 20%;
+  border-color: yellow;
+  cursor: pointer;
 }
 
 * body .tools .pen-range {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin: 0 15px;
+  margin: 0 8px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

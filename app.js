@@ -3,13 +3,12 @@ const ctx = canvas.getContext("2d");
 
 
 //Resizing()
-canvas.height = 650;
-canvas.width = window.innerWidth - 60;
-let painting ="false";
+canvas.height = 500;
+canvas.width = window.innerWidth - 400;
+let painting =false;
 
 ctx.fillStyle ="white";
 ctx.fillRect (0,0, canvas.width, canvas.height);
-
 
 let draw_color = "black";
 let draw_width = "50";
@@ -18,7 +17,6 @@ let draw_width = "50";
 function changeColor(item){
     draw_color = item.style.backgroundColor;
 }
-
 
 canvas.addEventListener("touchstart", start, false);
 canvas.addEventListener("touchmove", draw, false);
@@ -31,8 +29,8 @@ canvas.addEventListener("mouseup", stop, false);
 function start (e){
     painting = true;
     ctx.beginPath();
-    ctx.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop)
-    e.preventDefault();
+    ctx.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+    ctx.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
 }
 
 function draw(e){
@@ -53,7 +51,6 @@ function stop (e){
         ctx.beginPath ();
         painting = false;
     }
-    e.preventDefault();
 };
 
 function clearCanvas() {

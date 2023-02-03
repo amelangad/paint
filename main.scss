@@ -8,19 +8,17 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-       padding: 30px;
+       padding: 100px;
        margin: 0 15px;
-       overflow: hidden;
-       background: rgb(65, 65, 65);
+       background-image: linear-gradient(to top, rgb(124, 179, 255) , rgb(245, 108, 218));
     #canvas {
-        box-shadow: -3px 2px 9px 6px black;
+        box-shadow: -5px 5px 50px 8px rgba(246, 244, 244, 0.663);
         cursor: pointer;
-        background: rgb(65, 65, 65)
     }
 
 .tools {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
     margin-top: 15px;
 
@@ -29,27 +27,35 @@
         width: 40px;
         cursor: pointer;
         display: inline-block;
-        border-radius: 50%;
+        border-radius: 40%;
         margin: 0 15px;
     }
     .button {
         align-self: center;
         width: 100px;
         height: 40px;
-        border: 2px solid white;
+        border-radius: 30px;
+        border-bottom: 5px solid transparent;
         cursor: pointer;
         color: white;
         background: black;
-        margin: 0 15px;
+
     }
     .color-picker {
         align-self: center;
-        margin: 0 15px;
-        height: 50px
+        margin: 0 10px;
+        height: 40px;
+        width: 40px;
+        border-radius: 20%;
+        border-color: yellow;
+        cursor: pointer;
+
     }
     .pen-range {
         align-self: center;
-        margin: 0 15px;
+        margin: 0 8px;
+        cursor: pointer;
+
 
     }
 }}}
